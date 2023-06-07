@@ -14,7 +14,7 @@ import Projects from '../pages/Projects';
 
 const Layout = () =>{
     return (
-        <div className='h-screen'>
+        <div className=''>
             <Header/>
             <Outlet/>
             <Footer/>
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     {
         element : <Layout/>,
         children : [
-            {path : '/' , element : <Profile/>},
+            {path : '/' , element : <Profile userName="s-kvng"/>},
             {path : '/projects' , element : <Projects />},
         ],
     },
