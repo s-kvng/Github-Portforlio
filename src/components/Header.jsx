@@ -15,7 +15,7 @@ const Header = () => {
 
   console.log(Links)
   return (
-    <div className='md:container flex justify-between items-center mb-10'>
+    <div className='md:container flex justify-between items-center mb-5'>
         <div className="logo w-[100px] h-[100px]">
             <img src={ nea } alt="img" />
         </div>

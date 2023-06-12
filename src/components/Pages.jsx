@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element : <Layout/>,
         children : [
             {path : '/' , element : <Profile userName="s-kvng"/>},
-            {path : '/projects' , element : <Projects />},
+            {path : '/projects' , element : <Projects userName="s-kvng"/>},
         ],
     },
 ])
