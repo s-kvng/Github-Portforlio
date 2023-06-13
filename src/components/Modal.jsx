@@ -35,8 +35,8 @@ const Modal = ({ project, loading }) => {
   return (
     <div ref={modalWrapperRef}  className="modalWrapper w-full h-full fixed top-[50%] left-[50%] z-99 backdrop-blur-sm translate-x-[-50%] translate-y-[-50%]">
       <div
-        className="modal bg-bgModal  md:w-[40%] w-[80%] fixed top-[50%] left-[50%] translate-x-[-50%] 
-        translate-y-[-50%] rounded-[35px] flex flex-col items-center justify-center min-h-[40%] p-1 animate-[modalAnimation_1s_ease-in-out]"
+        className="modal bg-bgModal  md:w-[40%] w-[85%] fixed top-[50%] left-[50%] translate-x-[-50%] overflow-hidden
+        translate-y-[-50%] rounded-[35px] flex flex-col items-center justify-center min-h-[40%] p-2 animate-[modalAnimation_1s_ease-in-out]"
       >
       
 
