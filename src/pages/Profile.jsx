@@ -25,7 +25,7 @@ const Profile = ({ userName }) => {
       ) : (
         <div className="grad h-[65vh] w-[96%] md:w-[70%] mx-auto rounded-[8px] flex flex-col 
         lg:flex-row justify-around items-center p-[1.5rem] md:p-10">
-          <div className="img w-full flex items-center justify-center overflow-hidden">
+          <div className="img w-full flex items-center justify-center overflow-hidden md:mb-0 mb-4">
             <img
               className=" w-[220px] h-[220px] md:w-[250px] md:h-[250px] rounded-[8px] mb-4 md:mb-0"
               src={profile.avatar_url}
@@ -34,7 +34,7 @@ const Profile = ({ userName }) => {
           </div>
 
           {/* text */}
-          <div className="w-full h-full flex flex-col  justify-center">
+          <div className="w-full h-full flex flex-col  justify-center p-2">
             {items.map((item) => (
               <div className=" mb-2 md:mb-4 " key={profile.id}>
                 {item.field == "Name" && <span>&#128526; </span>}
