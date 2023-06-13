@@ -23,7 +23,20 @@ export default {
           hover: '#E1B72E',
         },
       },
+      backgroundColor : {
+        'bgModal' : 'rgba(138, 146, 154, 0.533)',
+      },
+      keyframes : {
+        modalAnimation: {
+          '0%' : {transform : 'translate(-50%, -50%) scale(0) rotate3d(0, 2, 0, 60deg)' },
+          '100%' : {transform : 'translate(-50% ,-50%) scale(1) rotate3d(0, 2, 0, 360deg)'},
+        }
+      },
+      animation : {
+        modalAnimation : 'modalAnimation 1s ease-in-out',
+      },
     },
+
   },
   plugins: [],
 }

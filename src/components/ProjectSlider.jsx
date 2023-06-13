@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -16,7 +16,10 @@ import { Pagination , Navigation} from 'swiper';
 //components
 import Project from "./Project";
 
+
 const ProjectSlider = ({ data }) => {
+
+ 
   
 
   return (
@@ -53,21 +56,17 @@ const ProjectSlider = ({ data }) => {
         console.log('log-> ',project)
         return (
           <SwiperSlide key={project.id}>
-              <Project project={{
-                field : project.name,
-                value : (
-                    <Link className="btn btn-accent text-[12px] font-semibold max-w-[180px]" to={`/projects/${project.name}`}>
-                        Open Project
-                    </Link>
-                ),
-                created : project.created_at,
-              }}/>
+              <Project project={project} />
+              
           </SwiperSlide>
+          
         )
+        
       })}
+      
     </>
    </Swiper>
-
+  
   );
 };
 

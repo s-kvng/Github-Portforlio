@@ -10,6 +10,7 @@ import Footer from './Footer';
 //pages
 import Profile from '../pages/Profile';
 import Projects from '../pages/Projects';
+import ProjectDetails from '../pages/ProjectDetails';
 
 
 const Layout = () =>{
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
         children : [
             {path : '/' , element : <Profile userName="s-kvng"/>},
             {path : '/projects' , element : <Projects userName="s-kvng"/>},
+            {path: '/projects/:name', element : <ProjectDetails userName="s-kvng"/>}
         ],
     },
 ])
