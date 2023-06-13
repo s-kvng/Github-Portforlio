@@ -24,7 +24,7 @@ const Profile = ({ userName }) => {
       </div>
       ) : (
         <div className="grad h-[65vh] w-[96%] md:w-[70%] mx-auto rounded-[8px] flex flex-col 
-        md:flex-row justify-around items-center p-[1.5rem] md:p-10">
+        lg:flex-row justify-around items-center p-[1.5rem] md:p-10">
           <div className="img w-full flex items-center justify-center overflow-hidden">
             <img
               className=" w-[220px] h-[220px] md:w-[250px] md:h-[250px] rounded-[8px] mb-4 md:mb-0"
