@@ -21,7 +21,7 @@ const Header = () => {
         </div>
         <div className="flex justify-around ">
             { Links.map((link , index)=>(
-              <Link key={index} to={link.path} className=" px-3 mx-3 hover:text-sky-500">
+              <Link key={index} to={link.path} className=" px-3 mx-3 hover:text-sky-500 uppercase">
                   {link.name}
               </Link>
             ))}
