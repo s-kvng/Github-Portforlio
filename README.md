@@ -1,6 +1,6 @@
 # Github Portfolio
 A SPA website dedicated to only my github profile... 
-A Simple Webapp built with React & powered by react by Github API.
+A Simple Webapp built with React & powered by Github API.
 
 
 ## Tech Stack
